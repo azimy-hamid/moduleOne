@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eee;
+}
+
+/* .time-container{
+
+} */
+
+.clock{
+    border-radius: 5px;
+}
+
+.clock--bg{
+    background-color: #222;
+}
+
+.clock-txt{
+    font-size: 6rem;
+    color: #fff;
+}
+
+.btn {
+    background-color: #222;
+    color: #fff;
+}
+
+.btn:hover {
+    box-shadow: inset 0 0 0 2px #222;
+    color: #222;
+}
+
+@media (max-width: 600px) {
+    .clock{
+        padding: 20px;
+    }
+}

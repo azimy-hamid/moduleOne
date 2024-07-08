@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dosis";
+}
+
+.main-container {
+  position: relative;
+  background: rgb(255, 249, 232);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 249, 232, 1) 30%,
+    rgba(255, 149, 0, 1) 99%
+  );
+  height: 100vh;
+}
+
+.dice-side-container {
+  position: absolute;
+  top: 4%;
+}
+
+.drop-down-input {
+  padding: 3px 5px;
+  background-color: inherit;
+  border: 2px solid rgb(255, 149, 0);
+  border-radius: 3px;
+}
+
+.inner-container {
+  border-radius: 5px;
+  height: 70%;
+  width: 70%;
+}
+
+.first-container {
+  position: relative;
+  background: rgb(255, 106, 0, 0.5);
+  border-radius: 5px;
+
+  height: 100%;
+  width: 50%;
+}
+
+.second-container {
+  position: relative;
+  background: rgb(255, 106, 0, 0.5);
+  border-radius: 5px;
+
+  height: 100%;
+  width: 50%;
+}
+
+.item-to-top {
+  position: absolute;
+  top: 10%;
+}
+
+.player-name {
+  font-size: 2.5rem;
+}
+
+.total-score {
+  font-size: 2rem;
+}
+
+.dice-container {
+  position: absolute;
+  bottom: 15%;
+  background-color: rgb(255, 249, 232, 0.9);
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  transition: all 0.3s ease;  
+}
+
+.dice-result {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.btn-container {
+  position: absolute;
+  bottom: 10%;
+}
+
+.game-btn {
+  transition: all 0.3s ease;
+  background-color: inherit;
+  border: 2px solid rgba(255, 149, 0);
+  border-radius: 3px;
+  padding: 6px 20px;
+}
+.game-btn:hover {
+  background-color: rgb(255, 149, 0);
+}
