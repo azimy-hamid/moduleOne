@@ -1,3 +1,9 @@
+let rotation = 0;
+const rotateDiv = (element) => {
+  rotation += 360;
+  element.style.transform = `rotate(${rotation}deg)`;
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   let numberOfSides = document.getElementById("number-of-sides");
   let numberOfSidesValue = numberOfSides.value;
@@ -26,12 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
   newGameBtn.addEventListener("click", () => {
     location.reload();
   });
-
-  let rotation = 0;
-  const rotateDiv = (element) => {
-    rotation += 360;
-    element.style.transform = `rotate(${rotation}deg)`;
-  };
 
   const getRandomNumber = (range) => {
     return Math.floor(Math.random() * range) + 1;
@@ -80,3 +80,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+module.exports = rotateDiv();
