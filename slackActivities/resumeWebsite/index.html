@@ -15,18 +15,22 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="./style.css" />
     <title>Haamed Azimi</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="background-main navbar navbar-expand-lg p-3">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          >Haamed Azimi<span class="logo-text">/IOD Student</span></a
+        <a
+          class="navbar-brand font-600 d-flex justify-content-center align-items-start"
+          href="#"
+          ><div class="logo"></div>
+          Haamed Azimi<span class="logo-text font-300">/IOD Student</span></a
         >
         <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">About Me</a>
+            <a class="nav-link" aria-current="page" href="#">About Me</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Resume</a>
@@ -37,16 +41,20 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a
+              class="nav-link"
+              href="https://github.com/azimy-hamid"
+              target="_blank"
+              >Github</a
+            >
           </li>
         </ul>
       </div>
     </nav>
-
     <div
-      class="hero-main-header d-flex justify-content-center align-items-center"
+      class="hero-main-header row g-0 justify-content-center align-items-center"
     >
-      <div class="first-container flex-grow-2">
+      <div class="first-container col-md-4 p-sm-4">
         <div
           class="feature-card d-flex justify-content-center align-items-center flex-column"
         >
@@ -77,14 +85,19 @@
           </div>
         </div>
       </div>
+
       <div
-        class="second-container flex-grow-3 d-flex justify-content-center align-items-start flex-column"
+        class="second-container col-md-8 d-flex justify-content-center align-items-start flex-column p-4"
       >
         <div class="second-container-content">
-          <h1>Hello</h1>
-          <p>Who I am & what I do</p>
-          <a href="#" class="hero-btn">Resume</a>
-          <a href="#" class="hero-btn">Projects</a>
+          <h1 class="font-600">Hello!</h1>
+          <p>Here's Who I am & what I do</p>
+          <div
+            class="hero-btns d-flex justify-content-start align-items-center gap-2"
+          >
+            <a href="#" class="hero-btn">Resume</a>
+            <a href="#" class="hero-btn">Projects</a>
+          </div>
           <p class="hero-paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
             similique! Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -96,21 +109,25 @@
       </div>
     </div>
 
-    <footer class="bg-light">
-      <div class="container d-flex justify-content-between pt-3 pb-3">
-        <div class="footer-copyright">
-          <small>&copy; 2035 by Maya Nelson. Powered and secured by Wix</small>
+    <footer>
+      <div
+        class="footer row g-0 gy-2 justify-content-center align-items-center justify-content-sm-center p-3"
+      >
+        <div class="footer-copyright col-sm-6 col-md-6 col-lg-3">
+            <small class="d-block">&copy; 2035 by Haamed Azimi.</small>
         </div>
-        <div class="footer-write">
+
+        <div class="footer-write col-sm-6 col-md-6 col-lg-3">
           <p>Write</p>
           <a href="mailto:hamidazimy875@gmail.com">hamidazimy875@gmail.com</a>
         </div>
 
-        <div class="footer-call">
+        <div class="footer-call col-sm-6 col-md-6 col-lg-3">
           <p>Call</p>
           <p>123-456-789</p>
         </div>
-        <div class="footer-social">
+
+        <div class="footer-social col-sm-6 col-md-6 col-lg-3">
           <small class="footer-follow-us">Follow us on</small>
           <img src="./imgs/fb.webp" alt="" class="feature-card-socials-img" />
           <img src="imgs/x.jpg" alt="" class="feature-card-socials-img" />
